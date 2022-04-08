@@ -2,6 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\LinearSearchUnsorted\LinearSearchUnsorted.csproj" />
+    <ProjectReference Include="..\LinearSearchSorted\LinearSearchSorted.csproj" />
   </ItemGroup>
 
   <PropertyGroup>
