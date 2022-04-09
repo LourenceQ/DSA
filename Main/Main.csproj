@@ -4,6 +4,7 @@
     <ProjectReference Include="..\LinearSearchUnsorted\LinearSearchUnsorted.csproj" />
     <ProjectReference Include="..\LinearSearchSorted\LinearSearchSorted.csproj" />
     <ProjectReference Include="..\BinarySearch\BinarySearch.csproj" />
+    <ProjectReference Include="..\BinarySearchRecursion\BinarySearchRecursion.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

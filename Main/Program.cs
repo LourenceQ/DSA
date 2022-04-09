@@ -2,7 +2,7 @@
 using LienarSearchUnsorted;
 using LinearSearchSorted;
 using BinarySearch;
-
+using BinarySearchRecursion;
 
 namespace SearchAlgorithms
 {
@@ -25,7 +25,15 @@ namespace SearchAlgorithms
             var binSearch = new BinarySearchClass(arr2, value2);
             var res3 = binSearch.BinarySearchMethod();
 
-            System.Console.WriteLine($"{res1}\n{res2}\n{res3}");
+
+            var binSearchRecursion = new BinarySearchRecursionClass();
+            var res4 = binSearchRecursion.BinarySearchRecursionMethod(arr2, arr2.Length, value2);
+
+            System.Console.WriteLine(
+                $"LienarSearchUnsorted: {res1}\n" +
+                $"LienarSearchSorted: {res2}\n" +
+                $"BinarySearchRecursion: {res3}\n" +
+                $"BinarySearchRecursion: {res4}");
 
         }
     }
