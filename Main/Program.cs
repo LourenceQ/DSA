@@ -13,7 +13,10 @@ namespace SearchAlgorithms
         {
             int[] arr3 = { 1, 45, 3, 78, 9, 3, 4, 1, 45 };            
 
-            int[] arr = { 1, 45, 3, 78, 9, 3, 4 };            
+            int[] arr = { 1, 45, 3, 78, 9, 3, 4 };  
+            
+            int[] arr4 = new int[] {34, 56, 77, 1, 5, 6, 6, 6, 6, 6, 6, 7, 8, 10, 34, 20};
+            
             int value = 4;
             var linearSearchUnsorted = new LienarSearchUnsortedClass(arr, value);
             var res1 =  linearSearchUnsorted.LinearSearchUnsortedMethod().ToString();
@@ -33,9 +36,6 @@ namespace SearchAlgorithms
             var res5 = firstRepeatedBruteForce.FirstRepeated();
 
             FirstRepeatedHashTable firstRepeatedHashTable = new FirstRepeatedHashTable(arr3);
-
-            int[] arr4 = new int[] {34, 56, 77, 1, 5, 6, 6, 6, 6, 6, 6, 7, 8, 10, 34, 20};
-            var firstRepeatedCounting = new FirstRepeatedCounting(arr4, arr4.Length, 76);
            
 
             WriteLine(
@@ -45,7 +45,6 @@ namespace SearchAlgorithms
                 $"BinarySearchRecursion: {res4}\n" +
                 $"FirstRepeatedElementBruteForce: {res5}");
             firstRepeatedHashTable.FirstRepeatedHash();
-            firstRepeatedCounting.PrintRepeatingCounting();
 
         }
     }
