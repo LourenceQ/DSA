@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace LinearSearchSorted
+﻿namespace LinearSearchSorted
 {
     public class LinearSearchSortedClass
     {

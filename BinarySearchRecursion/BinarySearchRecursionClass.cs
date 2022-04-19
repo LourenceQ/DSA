@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace BinarySearchRecursion
+﻿namespace BinarySearchRecursion
 {
     public class BinarySearchRecursionClass
     {

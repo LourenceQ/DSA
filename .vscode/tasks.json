@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/SearchAlgorithms/SearchAlgorithms.csproj",
+                "${workspaceFolder}/Main/Main.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/SearchAlgorithms/SearchAlgorithms.csproj",
+                "${workspaceFolder}/Main/Main.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -33,7 +33,7 @@
                 "watch",
                 "run",
                 "--project",
-                "${workspaceFolder}/SearchAlgorithms/SearchAlgorithms.csproj"
+                "${workspaceFolder}/Main/Main.csproj"
             ],
             "problemMatcher": "$msCompile"
         }

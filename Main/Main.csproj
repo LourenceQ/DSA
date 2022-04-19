@@ -5,6 +5,7 @@
     <ProjectReference Include="..\LinearSearchSorted\LinearSearchSorted.csproj" />
     <ProjectReference Include="..\BinarySearch\BinarySearch.csproj" />
     <ProjectReference Include="..\BinarySearchRecursion\BinarySearchRecursion.csproj" />
+    <ProjectReference Include="..\FirstRepeatedElementInArray\FirstRepeatedElementInArray.csproj" />
   </ItemGroup>
 
   <PropertyGroup>
