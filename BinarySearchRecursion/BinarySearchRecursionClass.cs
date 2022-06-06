@@ -2,7 +2,7 @@
 {
     public class BinarySearchRecursionClass
     {
-        public bool BinarySearchRecursionMethod(int[] Arr, int size, int Value)
+        public static bool BinarySearchRecursionMethod(int[] Arr, int size, int Value)
         {
             int left = 0;
             int right = size - 1;

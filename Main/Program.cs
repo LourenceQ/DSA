@@ -11,32 +11,28 @@ namespace SearchAlgorithms
     {
         static void Main(string[] args)
         {
-            int[] arr3 = { 1, 45, 3, 78, 9, 3, 4, 1, 45 };            
+            int[] arr = { 1, 45, 3, 78, 9, 3, 4 };
+            int[] arr2 = { 1, 3, 3, 4, 9, 43, 78 };
+            int[] arr3 = { 1, 45, 3, 78, 9, 3, 4, 1, 45 };
+            int[] arr4 = new int[] { 34, 56, 77, 1, 5, 6, 6, 6, 6, 6, 6, 7, 8, 10, 34, 20 };
 
-            int[] arr = { 1, 45, 3, 78, 9, 3, 4 };  
-            
-            int[] arr4 = new int[] {34, 56, 77, 1, 5, 6, 6, 6, 6, 6, 6, 7, 8, 10, 34, 20};
-            
             int value = 4;
-            var linearSearchUnsorted = new LienarSearchUnsortedClass(arr, value);
-            var res1 =  linearSearchUnsorted.LinearSearchUnsortedMethod().ToString();
-
-            int[] arr2 = {1, 3, 3, 4, 9, 43, 78};
             int value2 = 78;
-            var linearSearchSorted = new LinearSearchSortedClass(arr2, value2);
-            var res2 = linearSearchSorted.LinearSearchSortedMethod();
 
-            var binSearch = new BinarySearchClass(arr2, value2);
-            var res3 = binSearch.BinarySearchMethod();
+            var res1 = LienarSearchUnsortedClass
+                .LinearSearchUnsortedMethod(arr3, value);
 
-            var binSearchRecursion = new BinarySearchRecursionClass();
-            var res4 = binSearchRecursion.BinarySearchRecursionMethod(arr2, arr2.Length, value2);
+            var res2 = LinearSearchSortedClass
+                .LinearSearchSortedMethod(arr3, value);
 
-            var firstRepeatedBruteForce = new FirstRepeatedBruteForce(arr);
-            var res5 = firstRepeatedBruteForce.FirstRepeated();
+            var res3 = BinarySearchClass
+                .BinarySearchMethod(arr2, value2);
 
-            FirstRepeatedHashTable firstRepeatedHashTable = new FirstRepeatedHashTable(arr3);
-           
+            var res4 = BinarySearchRecursionClass
+                .BinarySearchRecursionMethod(arr2, arr2.Length, value2);
+
+            var res5 = FirstRepeatedBruteForce
+                .FirstRepeated(arr);
 
             WriteLine(
                 $"LienarSearchUnsorted: {res1}\n" +
@@ -44,7 +40,7 @@ namespace SearchAlgorithms
                 $"BinarySearchRecursion: {res3}\n" +
                 $"BinarySearchRecursion: {res4}\n" +
                 $"FirstRepeatedElementBruteForce: {res5}");
-            firstRepeatedHashTable.FirstRepeatedHash();
+            FirstRepeatedHashTable.FirstRepeatedHash(arr3);
 
         }
     }

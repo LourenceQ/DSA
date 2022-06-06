@@ -2,23 +2,14 @@
 {
     public class LinearSearchSortedClass
     {
-        public LinearSearchSortedClass(int[] arr, int value)
+        public static bool LinearSearchSortedMethod(int[] arr, int value)
         {
-            Arr = arr;
-            Value = value;
-        }
-
-        public int[] Arr { get; private set; }
-        public int Value { get; private set; }
-
-        public bool LinearSearchSortedMethod()
-        {
-            for (int i = 0; i < Arr.Length; i++)
+            for (int i = 0; i < arr.Length; i++)
             {
-                if(this.Value == this.Arr[i])
+                if(value == arr[i])
                     return true;
                 
-                else if(this.Value < this.Arr[i])
+                else if(value < arr[i])
                     return false;                
             }
             

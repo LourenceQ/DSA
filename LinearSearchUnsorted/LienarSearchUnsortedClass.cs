@@ -5,21 +5,11 @@
     /// </summary>
     public class LienarSearchUnsortedClass
     {
-        public LienarSearchUnsortedClass(int[] arr, int value)
+        public static bool LinearSearchUnsortedMethod(int[] arr, int value)
         {
-            Arr = arr;
-            Value = value;
-        }
-
-        public int[] Arr { get; private set; }
-        
-        public int Value { get; private set; }        
-
-        public bool LinearSearchUnsortedMethod()
-        {
-            for (int i = 0; i < this.Arr.Length; i++)
+            for (int i = 0; i < arr.Length; i++)
             {
-                if (this.Value == this.Arr[i])
+                if (value == arr[i])
                 {
                     return true;
                 }

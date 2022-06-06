@@ -5,24 +5,17 @@ namespace FirstRepeatedElementInArray
 {
     public class FirstRepeatedHashTable
     {
-        public FirstRepeatedHashTable(int[] arr)
-        {
-            Arr = arr;
-        }
-
-        public int[] Arr { get; set; }
-
-        public void FirstRepeatedHash()
+        public static void FirstRepeatedHash(int[] arr)
         {
             HashSet<int> hs = new HashSet<int>();
 
-            Write("\nRepeating elements are:");
-            for (int i = 0; i < Arr.Length; i++)
+            Write("Repeating elements are:");
+            for (int i = 0; i < arr.Length; i++)
             {
-                if(hs.Contains(Arr[i]))
-                    Write(" " + Arr[i]);
+                if(hs.Contains(arr[i]))
+                    Write(" " + arr[i]);
                 else
-                    hs.Add(Arr[i]);
+                    hs.Add(arr[i]);
             }
         }
     }

@@ -2,18 +2,10 @@
 {
     public class BinarySearchClass
     {
-        public BinarySearchClass(int[] arr, int value)
-        {
-            Arr = arr;
-            Value = value;
-        }
 
-        public int[] Arr { get; private set; }
-        public int Value { get; set; }
-
-        public bool BinarySearchMethod()
+        public static bool BinarySearchMethod(int[] arr, int value)
         {
-            int r = Arr.Length-1;
+            int r = arr.Length-1;
             int l = 0;
             int mid;
 
@@ -21,10 +13,10 @@
             {
                 mid = (l + r) / 2;
 
-                if(Arr[mid] == Value)
+                if(arr[mid] == value)
                     return true;
 
-                else if(Arr[mid] < Value)
+                else if(arr[mid] < value)
                     l = mid + 1;
 
                 else 

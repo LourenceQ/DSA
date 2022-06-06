@@ -2,21 +2,14 @@
 {
     public class FirstRepeatedBruteForce
     {
-        public int[] Arr { get; set; }
-
-        public FirstRepeatedBruteForce(int[] arr)
+        public static int FirstRepeated(int[] arr)
         {
-            Arr = arr;
-        }
-
-        public int FirstRepeated()
-        {
-            for (int i = 0; i < Arr.Length; i++)
+            for (int i = 0; i < arr.Length; i++)
             {
-                for (int j = i+1; j < Arr.Length; j++)
+                for (int j = i+1; j < arr.Length; j++)
                 {
-                    if(Arr[i] == Arr[j])
-                        return Arr[i];
+                    if(arr[i] == arr[j])
+                        return arr[i];
                 }
             }
 
