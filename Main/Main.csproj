@@ -6,6 +6,8 @@
     <ProjectReference Include="..\BinarySearch\BinarySearch.csproj" />
     <ProjectReference Include="..\BinarySearchRecursion\BinarySearchRecursion.csproj" />
     <ProjectReference Include="..\FirstRepeatedElementInArray\FirstRepeatedElementInArray.csproj" />
+    <ProjectReference Include="..\RemoveDuplicatesInIntegerList\RemoveDuplicatesInIntegerList.csproj" />
+    <ProjectReference Include="..\FindMissingNumberInIntegerList\FindMissingNumberInIntegerList.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

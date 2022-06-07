@@ -4,6 +4,8 @@ using BinarySearch;
 using BinarySearchRecursion;
 using FirstRepeatedElementInArray;
 using static System.Console;
+using RemoveDuplicatesInIntegerList;
+using FindMissingNumberInIntegerList;
 
 namespace SearchAlgorithms
 {
@@ -34,13 +36,27 @@ namespace SearchAlgorithms
             var res5 = FirstRepeatedBruteForce
                 .FirstRepeated(arr);
 
+            var res6 = RemoveDucplicates
+                .RemoveDup(arr4);
+            System.Console.Write("Duplicates removed: ");
+            foreach (var i in res6)
+            {
+                Write($"{i} ");
+            }
+
+            var res7 = FindMissingNumberSolution1
+                .FindMissing(arr3);
+
             WriteLine(
-                $"LienarSearchUnsorted: {res1}\n" +
+                $"\nLienarSearchUnsorted: {res1}\n" +
                 $"LienarSearchSorted: {res2}\n" +
                 $"BinarySearchRecursion: {res3}\n" +
                 $"BinarySearchRecursion: {res4}\n" +
-                $"FirstRepeatedElementBruteForce: {res5}");
+                $"FirstRepeatedElementBruteForce: {res5}\n" +
+                $"Find Missing Number Solution1: {res7}");
+                
             FirstRepeatedHashTable.FirstRepeatedHash(arr3);
+
 
         }
     }
