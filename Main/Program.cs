@@ -8,6 +8,7 @@ using RemoveDuplicatesInIntegerList;
 using FindMissingNumberInIntegerList;
 using System;
 using System.Diagnostics;
+using Timing;
 
 namespace SearchAlgorithms
 {
@@ -21,23 +22,8 @@ namespace SearchAlgorithms
             int[] arr4 = new int[] { 34, 56, 77, 1, 5, 6, 6, 6, 6, 6, 6, 7, 8, 10, 34, 20 };
             int[] nums = new int[100000];
 
-            BuildArray(nums);
-
-            TimeSpan startTime;
-            TimeSpan duration;
-            
-            startTime = Process.GetCurrentProcess()
-                .Threads[0].UserProcessorTime;
-
-            DisplayNums(nums);
-
-            duration = Process.GetCurrentProcess()
-                .Threads[0].UserProcessorTime.Subtract(startTime);
-
-            Console.WriteLine("Time: " + duration.TotalSeconds);
-
             int value = 4;
-            int value2 = 78;
+            int value2 = 78;            
 
             var res1 = LienarSearchUnsortedClass
                 .LinearSearchUnsortedMethod(arr3, value);
@@ -75,7 +61,17 @@ namespace SearchAlgorithms
 
             FirstRepeatedHashTable.FirstRepeatedHash(arr3);
 
+
+            BuildArray(nums);
+            TimerClass tObj = new TimerClass();
+            tObj.startTime();
+            DisplayNums(nums);
+            tObj.StopTime();
+            
+            Console.WriteLine($"Tempo (.NET):  {tObj.Result().TotalSeconds}");
+
         }
+        
         static void BuildArray(int[] arr)
         {
             for (int i = 0; i <= 99999; i++)
