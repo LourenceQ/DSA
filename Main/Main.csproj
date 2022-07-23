@@ -9,6 +9,7 @@
     <ProjectReference Include="..\RemoveDuplicatesInIntegerList\RemoveDuplicatesInIntegerList.csproj" />
     <ProjectReference Include="..\FindMissingNumberInIntegerList\FindMissingNumberInIntegerList.csproj" />
     <ProjectReference Include="..\Timing\Timing.csproj" />
+    <ProjectReference Include="..\ArrayBase\ArrayBase.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

@@ -9,6 +9,7 @@ using FindMissingNumberInIntegerList;
 using System;
 using System.Diagnostics;
 using Timing;
+using ArrayBase;
 
 namespace SearchAlgorithms
 {
@@ -23,7 +24,14 @@ namespace SearchAlgorithms
             int[] nums = new int[100000];
 
             int value = 4;
-            int value2 = 78;            
+            int value2 = 78;   
+
+            CArray cArr = new CArray(7); 
+            for(int i=0; i<=6; i++)
+            {
+                cArr.Insert(i);
+            }
+            cArr.DisplayElements();
 
             var res1 = LienarSearchUnsortedClass
                 .LinearSearchUnsortedMethod(arr3, value);
@@ -42,33 +50,34 @@ namespace SearchAlgorithms
 
             var res6 = RemoveDucplicates
                 .RemoveDup(arr4);
-            System.Console.Write("Duplicates removed: ");
-            foreach (var i in res6)
-            {
-                Write($"{i} ");
-            }
 
-            var res7 = FindMissingNumberSolution1
-                .FindMissing(arr3);
+            // System.Console.Write("Duplicates removed: ");
+            // foreach (var i in res6)
+            // {
+            //     Write($"{i} ");
+            // }
 
-            WriteLine(
-                $"\nLienarSearchUnsorted: {res1}\n" +
-                $"LienarSearchSorted: {res2}\n" +
-                $"BinarySearchRecursion: {res3}\n" +
-                $"BinarySearchRecursion: {res4}\n" +
-                $"FirstRepeatedElementBruteForce: {res5}\n" +
-                $"Find Missing Number Solution1: {res7}");
+            // var res7 = FindMissingNumberSolution1
+            //     .FindMissing(arr3);
 
-            FirstRepeatedHashTable.FirstRepeatedHash(arr3);
+            // WriteLine(
+            //     $"\nLienarSearchUnsorted: {res1}\n" +
+            //     $"LienarSearchSorted: {res2}\n" +
+            //     $"BinarySearchRecursion: {res3}\n" +
+            //     $"BinarySearchRecursion: {res4}\n" +
+            //     $"FirstRepeatedElementBruteForce: {res5}\n" +
+            //     $"Find Missing Number Solution1: {res7}");
+
+            // FirstRepeatedHashTable.FirstRepeatedHash(arr3);
 
 
-            BuildArray(nums);
-            TimerClass tObj = new TimerClass();
-            tObj.startTime();
-            DisplayNums(nums);
-            tObj.StopTime();
+            // BuildArray(nums);
+            // TimerClass tObj = new TimerClass();
+            // tObj.startTime();
+            // DisplayNums(nums);
+            // tObj.StopTime();
             
-            Console.WriteLine($"Tempo (.NET):  {tObj.Result().TotalSeconds}");
+            // Console.WriteLine($"Tempo (.NET):  {tObj.Result().TotalSeconds}");
 
         }
         
