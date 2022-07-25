@@ -23,6 +23,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoveDuplicatesInIntegerLi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Timing", "Timing\Timing.csproj", "{9D201255-17B9-42AB-B01B-CF208D33D511}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BubbleSort", "BubbleSort\BubbleSort.csproj", "{C006EEE1-201D-4B9B-BFDA-57D4FD525574}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelectionSort", "SelectionSort\SelectionSort.csproj", "{34B9E49C-9386-47F8-9B4D-DFE991AF4106}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -76,5 +80,13 @@ Global
 		{9D201255-17B9-42AB-B01B-CF208D33D511}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D201255-17B9-42AB-B01B-CF208D33D511}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9D201255-17B9-42AB-B01B-CF208D33D511}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C006EEE1-201D-4B9B-BFDA-57D4FD525574}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C006EEE1-201D-4B9B-BFDA-57D4FD525574}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C006EEE1-201D-4B9B-BFDA-57D4FD525574}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C006EEE1-201D-4B9B-BFDA-57D4FD525574}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34B9E49C-9386-47F8-9B4D-DFE991AF4106}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34B9E49C-9386-47F8-9B4D-DFE991AF4106}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34B9E49C-9386-47F8-9B4D-DFE991AF4106}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34B9E49C-9386-47F8-9B4D-DFE991AF4106}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -10,6 +10,8 @@
     <ProjectReference Include="..\FindMissingNumberInIntegerList\FindMissingNumberInIntegerList.csproj" />
     <ProjectReference Include="..\Timing\Timing.csproj" />
     <ProjectReference Include="..\ArrayBase\ArrayBase.csproj" />
+    <ProjectReference Include="..\BubbleSort\BubbleSort.csproj" />
+    <ProjectReference Include="..\SelectionSort\SelectionSort.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

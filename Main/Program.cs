@@ -10,6 +10,8 @@ using System;
 using System.Diagnostics;
 using Timing;
 using ArrayBase;
+using BubbleSort;
+using SelectionSort;
 
 namespace SearchAlgorithms
 {
@@ -43,6 +45,12 @@ namespace SearchAlgorithms
 
             var res6 = RemoveDucplicates
                 .RemoveDup(arr4);
+
+            var bs = BubbleSortClass
+                .BubbleSortMethod(arr2); 
+            
+            var ss = SelectionSortClass
+                .SelectionSortMethod(arr); 
 
             // System.Console.Write("Duplicates removed: ");
             // foreach (var i in res6)
@@ -82,6 +90,8 @@ namespace SearchAlgorithms
             for (int i = 0; i < 10; i++)
                 randNums.Insert((int) (rnd.NextDouble() * 100));
             randNums.DisplayElements();
+
+            
 
         }
         
