@@ -24,14 +24,7 @@ namespace SearchAlgorithms
             int[] nums = new int[100000];
 
             int value = 4;
-            int value2 = 78;   
-
-            CArray cArr = new CArray(7); 
-            for(int i=0; i<=6; i++)
-            {
-                cArr.Insert(i);
-            }
-            cArr.DisplayElements();
+            int value2 = 78;             
 
             var res1 = LienarSearchUnsortedClass
                 .LinearSearchUnsortedMethod(arr3, value);
@@ -78,6 +71,17 @@ namespace SearchAlgorithms
             // tObj.StopTime();
             
             // Console.WriteLine($"Tempo (.NET):  {tObj.Result().TotalSeconds}");
+
+            // CArray cArr = new CArray(7); 
+            // for(int i=0; i<=6; i++)
+            //     cArr.Insert(i);
+            // cArr.DisplayElements();
+
+            CArray randNums = new CArray(10);
+            Random rnd = new Random(10);
+            for (int i = 0; i < 10; i++)
+                randNums.Insert((int) (rnd.NextDouble() * 100));
+            randNums.DisplayElements();
 
         }
         

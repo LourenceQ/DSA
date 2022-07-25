@@ -8,8 +8,6 @@ namespace ArrayBase
         private int upper;
         private int numElements;
 
-        public CArray() { }
-
         public CArray(int size)
         {
             arr = new int[size];
